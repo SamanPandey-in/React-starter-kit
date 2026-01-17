@@ -1,125 +1,16 @@
-# 🚀 Hackathon Starter Kit
+# React + Vite
 
-Production-ready React starter for rapid hackathon development.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## ✨ Features
+Currently, two official plugins are available:
 
-### 🎨 4 Modern Themes (Light & Dark)
-- **Minimal** - Clean design
-- **Glassmorphism** - Modern glass effects
-- **Neo-brutalism** - Bold brutalist design
-- **Corporate** - Professional look
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### 🧩 Complete Component Library
-Buttons, Cards, Inputs, Modals, Toasts, Alerts, Spinner, Select, Checkbox, and more
+## React Compiler
 
-### 🔐 Authentication
-Login, Register, Protected Routes, Auth Context
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### 📱 Responsive Layout
-Navbar, Sidebar, Footer - all mobile-responsive
+## Expanding the ESLint configuration
 
-## 🛠 Quick Start
-
-```bash
-npm install
-npm run dev
-```
-
-## 🎨 Theme System
-
-```jsx
-import { useTheme } from '@/contexts/ThemeContext';
-
-const { theme, changeTheme, toggleMode } = useTheme();
-changeTheme('glass'); // minimal, glass, brutal, corporate
-toggleMode(); // light/dark
-```
-
-## 🔐 Authentication
-
-```jsx
-import { useAuth } from '@/contexts/AuthContext';
-
-const { login, register, logout, user } = useAuth();
-await login(email, password);
-```
-
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   ├── common/          # Reusable components
-│   └── layout/          # Layout components
-├── pages/               # Page components
-├── contexts/            # React contexts
-├── hooks/               # Custom hooks
-├── services/            # API services
-├── utils/               # Utilities
-└── routes/              # Routes
-```
-
-## 🧩 Component Usage
-
-### Button
-```jsx
-<Button variant="primary" size="lg" loading={isLoading}>
-  Click Me
-</Button>
-```
-
-### Input
-```jsx
-<Input label="Email" type="email" icon={Mail} error={errors.email} />
-```
-
-### Toast
-```jsx
-const { success, error } = useToast();
-success('Operation completed!');
-```
-
-## 🚀 Deployment
-
-```bash
-npm run build
-```
-
-Deploy `dist` folder to Vercel, Netlify, AWS S3, or any static host.
-
-## 📝 Environment Variables
-
-Create `.env`:
-```
-VITE_API_URL=https://your-api.com/api
-```
-
-## 🎯 Singularity Special
-
-1. Pick your theme early
-2. Customize colors in `src/styles/index.css`
-3. Add new pages by copying existing structure
-4. Reuse components - everything is modular
-5. Focus on features - UI is ready!
-
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Follow the existing code style
-4. Add tests for new features
-5. Submit a pull request
----
-
-## 📜 License
-
-This project is licensed under MIT License. Use freely and get ahead of the curve.
-
-## 👨‍💻 Author
-
-Credits: Saman Pandey
-
-**Built with ❤️ for hackathon developers**
-Happy Hacking! 🚀
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
