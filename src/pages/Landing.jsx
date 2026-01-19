@@ -14,7 +14,7 @@ import {
   Award
 } from 'lucide-react';
 import Button from '@mui/material/Button';
-import Logo from './../components/ui/Logo';
+import Logo from '../components/Logo';
 import ThemeToggle from '../components/theme/ThemeToggle';
 
 const Landing = () => {
