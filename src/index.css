@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-/* =====================================================
-   DESIGN TOKENS
-===================================================== */
+/* DESIGN TOKENS */
 @theme {
   /* Primary */
   --primary-50: #eff6ff;
@@ -33,9 +31,7 @@
   --radius-lg: 0.75rem;
 }
 
-/* =====================================================
-   LIGHT THEME
-===================================================== */
+/* LIGHT THEME */
 :root {
   --bg: var(--secondary-50);
   --bg-muted: var(--secondary-100);
@@ -45,9 +41,7 @@
   --card: white;
 }
 
-/* =====================================================
-   DARK THEME
-===================================================== */
+/* DARK THEME */
 .dark {
   --bg: #020617;
   --bg-muted: #020617;
@@ -57,9 +51,7 @@
   --card: #020617;
 }
 
-/* =====================================================
-   BASE
-===================================================== */
+/* BASE */
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -70,18 +62,7 @@ body {
   border-color: var(--border);
 }
 
-.text-black {
-  color: black;
-}
-.dark .text-white {
-  color: white;
-}
-
-
-
-/* =====================================================
-   COMPONENTS
-===================================================== */
+/* COMPONENTS */
 @layer components {
     .card {
         background-color: var(--card);
@@ -101,9 +82,7 @@ body {
     }
 }
 
-/* =====================================================
-   UTILITIES
-===================================================== */
+/* UTILITIES */
 @layer utilities {
     .glass-effect {
         background: var(--glass);
