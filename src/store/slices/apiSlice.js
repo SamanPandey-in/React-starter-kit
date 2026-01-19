@@ -1,7 +1,7 @@
 // slice to manage API interactions using RTK Query
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://odoo-hack-25.onrender.com/api/v1';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 export const apiSlice = createApi({
   reducerPath: 'api',
