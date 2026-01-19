@@ -1,15 +1,20 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ThemeToggle from './components/theme/ThemeToggle'
 import Landing from './pages/Landing'
 
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Landing />
+    },
+  ])
   return (
     <>
-      <div className="text-black dark:text-white">
+      <RouterProvider router={router}>
         <ThemeToggle />
-        <Landing />
-      </div>
-
+      </RouterProvider>
     </>
   )
 }
