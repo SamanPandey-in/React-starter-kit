@@ -31,7 +31,7 @@ export default function ThemeProvider({ children }) {
         Optional wrapper: make all icons/text inherit the current color automatically.
         This ensures that Lucide icons with `currentColor` always match the text color.
       */}
-      <div className="text-black dark:text-white">{children}</div>
+      <div className="text-text dark:text-white">{children}</div>
     </MuiThemeProvider>
   );
 }
