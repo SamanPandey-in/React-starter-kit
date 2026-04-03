@@ -9,8 +9,6 @@ export default defineConfig({
     tailwindcss()
   ],
   server: {
-    port: 3000,
-    open: true,
     forwardConsole: true
   },
   resolve: {
